@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="blue_textview">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#673AB7</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+
+
+</resources>

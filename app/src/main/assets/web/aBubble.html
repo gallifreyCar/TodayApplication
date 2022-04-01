@@ -1,0 +1,108 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <canvas class="hero__model-canvas" width="626" height="534" style="width: 626px; height: 534px;"></canvas>
+    <canvas id="cnv" width="600" height="600"></canvas>
+    <button id="btn">Hello</button>
+    <button id="clrBtn">Clear</button>
+   
+    <script>
+
+        let canvas = document.getElementById('cnv');
+        let ctx = canvas.getContext('2d');
+
+        function drawCircle(x, y, r,color) {
+            ctx.beginPath();
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = color;
+            ctx.arc(x, y, r, 0, Math.PI * 2);
+            ctx.stroke();
+        }
+        function clear() {
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(0, 0, 600, 600);
+        }
+        let fps = 0;
+        let drawFpsNum = 0;
+        function drawFPS() {
+            ctx.font = "20px Georgia";
+            ctx.fillStyle = 'rgb(255,255,0)';
+            ctx.fillText('FPS=' + drawFpsNum, 100, 100);
+        }
+
+        function randomNum(a,b){
+            return parseInt((b-a)*Math.random()+a);
+        }
+
+        function randomColor(){
+            return `rgb(${randomNum(0,256)},${randomNum(0,256)},${randomNum(0,256)})`;
+        }
+
+        let a = 100;
+        document.getElementById('btn').addEventListener('click', () => {
+            clear();
+            drawCircle(a++, 100, 50);
+        });
+        document.getElementById('clrBtn').addEventListener('click', () => {
+            clear();
+        });
+
+        class Circle {
+            constructor(x, y, r, vx, vy, color) {
+                this.x = x;
+                this.y = y;
+                this.r = r;
+                this.vx = vx;
+                this.vy = vy;
+                this.color = color;
+            }
+
+            draw() {
+                drawCircle(this.x, this.y, this.r,this.color);
+            }
+
+            ticket() {
+                if (this.x + this.r > 600) {
+                    this.vx *= -1
+                }
+                if (this.x - this.r < 0) {
+                    this.vx *= -1
+                }
+
+                if (this.y + this.r > 600) {
+                    this.vy *= -1
+                }
+                if (this.y - this.r < 0) {
+                    this.vy *= -1
+                }
+                this.x += this.vx
+                this.y += this.vy
+                this.draw()
+            }
+        }
+
+        let circles = Array.from({length:100},(v,k)=>{
+            return new Circle(randomNum(50,550),randomNum(50,550),randomNum(10,50),5*Math.random(),5*Math.random(),randomColor());
+        });
+        function loop() {
+            clear();
+
+            circles.forEach(i=>i.ticket())
+
+            drawFPS();
+            fps++;
+            requestAnimationFrame(loop);
+        }
+        setInterval(() => {
+            drawFpsNum = fps;
+            fps = 0;
+        }, 1000);
+        loop();
+    </script>
+</body>
+
+</html>

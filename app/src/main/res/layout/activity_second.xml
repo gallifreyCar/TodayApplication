@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context=".SecondActivity">
+    <TableRow>
+        <TableLayout>
+            <TableRow>
+                <Button android:text="Back"/>
+                <Button android:text="/"/>
+                <Button android:text="*"/>
+
+            </TableRow>
+        </TableLayout>
+        <Button android:text="-"/>
+    </TableRow>
+    <TableRow>
+        <TableLayout>
+            <TableRow>
+            <Button android:text="7"/>
+            <Button android:text="8"/>
+            <Button android:text="9"/>
+            </TableRow>
+            <TableRow>
+            <Button android:text="4"/>
+            <Button android:text="5"/>
+            <Button android:text="6"/>
+            </TableRow>
+        </TableLayout>
+        <Button android:layout_height="match_parent"
+                android:text="Button"/>
+    </TableRow>
+    <TableRow>
+        <TableLayout>
+            <TableRow>
+                <Button android:text="1"/>
+                <Button android:text="2"/>
+                <Button android:text="3"/>
+            </TableRow>
+            <TableRow>
+                <Button android:text="0" android:layout_span="2"/>
+                <Button android:text="."/>
+
+            </TableRow>
+        </TableLayout>
+        <Button android:layout_height="match_parent"
+            android:text="="/>
+    </TableRow>
+</TableLayout>

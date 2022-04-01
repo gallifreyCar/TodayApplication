@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/down"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--    <WebView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/wv"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:id="@+id/tv1"-->
+    <!--        android:text="classroom"-->
+    <!--        android:background="@drawable/classroom"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tv2"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:id="@+id/tv2"-->
+    <!--        android:text="school"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/tv1"/>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_weight="2"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        >-->
+
+    <!--        <View-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:background="@drawable/righecircle"-->
+    <!--            android:backgroundTint="#CA0909"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            ></View>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:divider="@drawable/divider_ver"-->
+    <!--            android:showDividers="middle"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <View-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/righecircle"-->
+    <!--                android:backgroundTint="#673AB7"></View>-->
+
+    <!--            <View-->
+    <!--                android:background="@drawable/righecircle"-->
+    <!--                android:backgroundTint="#FFC107"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_width="match_parent"-->
+
+    <!--                ></View>-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:divider="@drawable/divider_hor"-->
+    <!--        android:showDividers="middle|beginning|end"-->
+    <!--        android:gravity="center">-->
+    <!--        <View-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:backgroundTint="#A85DD57E"-->
+    <!--            android:background="@drawable/righecircle"-->
+    <!--            />-->
+
+    <!--        <View-->
+    <!--            android:layout_width="200dp"-->
+    <!--            android:layout_height="match_parent"-->
+
+    <!--            android:layout_gravity="bottom"-->
+    <!--            android:background="@drawable/righecircle"-->
+    <!--            android:backgroundTint="#31D85F"></View>-->
+    <!--    </LinearLayout>-->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    
+        <Button
+            android:id="@+id/btn_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showToast"
+            android:text="Event Click"
+            android:textSize="30sp" />
+
+        <com.gallifrey.todayapplication.MyButton
+            android:id="@+id/my_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="回调按钮"
+            android:textSize="30sp"
+
+            ></com.gallifrey.todayapplication.MyButton>
+
+        <com.gallifrey.todayapplication.MyEditText
+            android:id="@+id/my_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入号码"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="EditText"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_radiobutton"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="CheckBox"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_checkbox"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleSwitch"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_tbsw"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="DialogActivity"
+            android:textAllCaps="false"
+            android:id="@+id/btn_dialog"
+            />
+    </LinearLayout>
+</ScrollView>

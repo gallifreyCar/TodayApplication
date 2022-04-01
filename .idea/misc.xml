@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/bgeditext.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/checkbox.xml" value="0.159" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/checkbox_bg.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/checkbox_bg_round.xml" value="0.159" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/circleradius.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/divider_hor.xml" value="0.267" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/divider_ver.xml" value="0.267" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/hollow.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/pressresult.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/rb_bg.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/rb_nubutton.xml" value="0.159" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/righecircle.xml" value="0.267" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/textcolor.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/thumb.xml" value="0.1235" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/track.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_button.xml" value="0.26197916666666665" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_check_box.xml" value="0.26197916666666665" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_constraint.xml" value="0.28072916666666664" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_dialog.xml" value="0.26197916666666665" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_edit_text.xml" value="0.25" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_edit_text2.xml" value="0.1875" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_radio_button.xml" value="0.26197916666666665" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_relative.xml" value="0.28125" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_second.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_text_view.xml" value="0.26197916666666665" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_third.xml" value="0.1" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_toggle_switch.xml" value="0.2463768115942029" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/content_edit_text.xml" value="0.24166666666666667" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_first.xml" value="0.24166666666666667" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_second.xml" value="0.24166666666666667" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.247" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
