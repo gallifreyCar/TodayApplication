@@ -5,9 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class DialogActivity extends AppCompatActivity {
     private Button mBtnNormal, mBtnList, mBtnSingle, mBtnMulti, mBtnEdit, mBtnCustom;
@@ -48,17 +52,78 @@ public class DialogActivity extends AppCompatActivity {
                     singleDialog();
                     break;
                 case R.id.btn_multi:
-
+                    multiDialog();
                     break;
                 case R.id.btn_edit:
-
+                    editDialog();
                     break;
                 case R.id.btn_custom:
-
+                    customDialog();
 
             }
         }
         
+    }
+
+    private void customDialog() {
+        View view= LayoutInflater.from(this).inflate(R.layout.layout_custom,null,false);
+        AlertDialog.Builder customD=new AlertDialog.Builder(this);
+        EditText etUser=view.findViewById(R.id.et_user);
+        Button mBtnCustomOk=view.findViewById(R.id.btn_custom_ok);
+        customD.setView(view).show();
+        mBtnCustomOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DialogActivity.this,etUser.getText(),Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    private void editDialog() {
+        AlertDialog.Builder editD=new AlertDialog.Builder(this);
+        EditText editText=new EditText(this);
+        editD.setIcon(R.mipmap.icon_dialog)
+                .setTitle("输入对话框")
+                .setView(editText)
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(DialogActivity.this,"内容: "+editText.getText(),Toast.LENGTH_LONG).show();
+                    }
+                })
+                .show();
+    }
+
+    ArrayList<Integer> choices =new ArrayList<>();
+    private void multiDialog() {
+
+        String[] items={"绘画","唱歌","足球","吉他"};
+        boolean[] checkedItems={true,false,false,true};
+        choices.clear();
+        choices.add(0);
+        choices.add(3);
+        AlertDialog.Builder multiD=new AlertDialog.Builder(this);
+        multiD.setIcon(R.mipmap.icon_dialog)
+                .setTitle("多选对话框")
+                .setMultiChoiceItems(items, checkedItems, new DialogInterface.OnMultiChoiceClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i, boolean b) {
+                        if(b){
+                            choices.add(i);
+                        }else{
+                            choices.remove(Integer.valueOf(i));
+                        }
+                    }
+                }).setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                StringBuilder str=new StringBuilder();
+                for (int j = 0; j < choices.size(); j++) {
+                    str.append(items[choices.get(j)]+" ");
+                }
+                Toast.makeText(DialogActivity.this,"兴趣爱好："+str,Toast.LENGTH_LONG).show();
+            }
+        }).show();
     }
 
     private void singleDialog() {

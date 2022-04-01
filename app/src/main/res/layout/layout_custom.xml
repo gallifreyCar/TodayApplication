@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    tools:context=".EditTextActivity">
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名: "
+
+        android:textSize="30sp" />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_user"
+        android:layout_toEndOf="@id/tv_user"
+        android:hint="请输入号码"
+        android:inputType="phone"
+        android:textSize="30sp"
+        android:background="@drawable/bgeditext"
+
+        />
+    <TextView
+        android:id="@+id/tv_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user"
+        android:layout_alignStart="@id/tv_user"
+        android:layout_marginTop="40dp"
+        android:text="密   码: "
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_user"
+        android:layout_alignBaseline="@id/tv_pwd"
+        android:layout_toEndOf="@id/tv_pwd"
+        android:background="@drawable/bgeditext"
+        android:paddingStart="10dp"
+        android:drawablePadding="5dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textSize="30sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tv_pwd"
+        android:id="@+id/btn_custom_ok"
+        android:paddingHorizontal="60dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="确定"
+        android:background="@drawable/pressresult"/>
+</RelativeLayout>
