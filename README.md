@@ -5,7 +5,7 @@
 - 本项目是本人在学习Android Studio时写的测试项目归档，没有太多实质意义
 - 更多关于本项目的文字说明（Android Studio的学习笔记）请看本人的博客：
   - http://www.gallifrey.asia
-  - https://ufovsmba.github.io
+  - [Gallifrey's Blog - 个人文章归档 (ufovsmba.github.io)](https://ufovsmba.github.io/)
 
 ## 内容
 
