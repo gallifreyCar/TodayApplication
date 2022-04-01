@@ -3,6 +3,7 @@ package com.gallifrey.todayapplication;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 
 public class DialogActivity extends AppCompatActivity {
     private Button mBtnNormal, mBtnList, mBtnSingle, mBtnMulti, mBtnEdit, mBtnCustom;
+    private Button mBtnCircle,mBtnhori;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,9 @@ public class DialogActivity extends AppCompatActivity {
         mBtnMulti = findViewById(R.id.btn_multi);
         mBtnEdit = findViewById(R.id.btn_edit);
         mBtnCustom = findViewById(R.id.btn_custom);
+        mBtnCircle =findViewById(R.id.btn_circle_progress);
+        mBtnhori=findViewById(R.id.btn_hori_progress);
+
 
         MyDialogClickListener myDialogClickListener = new MyDialogClickListener();
         mBtnCustom.setOnClickListener(myDialogClickListener);
@@ -34,6 +39,8 @@ public class DialogActivity extends AppCompatActivity {
         mBtnEdit.setOnClickListener(myDialogClickListener);
         mBtnMulti.setOnClickListener(myDialogClickListener);
         mBtnList.setOnClickListener(myDialogClickListener);
+        mBtnhori.setOnClickListener(myDialogClickListener);
+        mBtnCircle.setOnClickListener(myDialogClickListener);
     }
 
 
@@ -59,10 +66,57 @@ public class DialogActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_custom:
                     customDialog();
-
+                    break;
+                case R.id.btn_hori_progress:
+                    horiProgressDialog();
+                    break;
+                case R.id.btn_circle_progress:
+                    circleProgressDialog();
             }
         }
         
+    }
+
+    private void circleProgressDialog() {
+        ProgressDialog circleD=new ProgressDialog(this);
+        circleD.setIcon(R.mipmap.icon_dialog);
+        circleD.setTitle("环状滚动条");
+        circleD.setMessage("努力加载中.......");
+        circleD.setProgressStyle(ProgressDialog.STYLE_SPINNER);//不写这个，也是默认环形滚动条
+        circleD.show();
+    }
+
+    private void horiProgressDialog() {
+        ProgressDialog horiProgress=new ProgressDialog(this);
+        horiProgress.setIcon(R.mipmap.icon_dialog);
+        horiProgress.setTitle("水平滚动条");
+        horiProgress.setMessage("努力加载中......");
+        horiProgress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        horiProgress.setProgress(0);//初始进度值
+        horiProgress.setMax(100);//最大进度值
+        horiProgress.setSecondaryProgress(3);//二级进度条
+        horiProgress.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(DialogActivity.this,"点击确定",Toast.LENGTH_LONG);
+                dialogInterface.cancel();
+            }
+        });
+        horiProgress.show();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(horiProgress.getProgress()<horiProgress.getMax()){
+                    try {
+                        Thread.sleep(100);
+                        horiProgress.incrementProgressBy(1);//每100毫秒增加1
+                        horiProgress.incrementSecondaryProgressBy(2);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
     }
 
     private void customDialog() {

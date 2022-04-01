@@ -73,5 +73,25 @@
         app:layout_constraintTop_toBottomOf="@id/btn_edit"
         android:layout_marginTop="10dp"
         />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="环状滚动条"
+        android:textSize="30sp"
+        android:id="@+id/btn_circle_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_custom"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="水平滚动条"
+        android:textSize="30sp"
+        android:id="@+id/btn_hori_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_circle_progress"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
