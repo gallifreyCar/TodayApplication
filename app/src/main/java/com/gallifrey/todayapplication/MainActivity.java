@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView mTv;
     private MyApplication myApplication;
     private Button mBtnEvent,mBtnTextView,mBtnButton,mBtnEditText,mBtnRadioButton,mBtnCheckBox,mBtnTbSw;
-    private Button mBtnDialog;
+    private Button mBtnDialog,mBtnFragment;
     private MyButton myButton;
     private  MyEditText myEditText;
     @SuppressLint("ClickableViewAccessibility")
@@ -157,6 +157,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnDialog =findViewById(R.id.btn_dialog);
         mBtnDialog.setOnClickListener(myClickListener);
 
+        mBtnFragment=findViewById(R.id.btn_fragment);
+        mBtnFragment.setOnClickListener(myClickListener);
 
         }
 
@@ -186,6 +188,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.btn_dialog:
                     intent=new Intent(MainActivity.this,DialogActivity.class);
                     break;
+                case R.id.btn_fragment:
+                    intent=new Intent(MainActivity.this,FragmentActivity.class);
+                            break;
                 default:
                     throw new IllegalArgumentException("null pointer");
             }

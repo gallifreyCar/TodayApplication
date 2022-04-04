@@ -202,5 +202,13 @@
             android:textAllCaps="false"
             android:id="@+id/btn_dialog"
             />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FragmentActivity"
+            android:textSize="30sp"
+            android:id="@+id/btn_fragment"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
 </ScrollView>

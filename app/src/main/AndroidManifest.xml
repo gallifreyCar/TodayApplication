@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TodayApplication">
         <activity
+            android:name=".FragmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".DialogActivity"
             android:exported="false" />
         <activity
