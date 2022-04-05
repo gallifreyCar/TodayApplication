@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingHorizontal="10dp">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:button="@drawable/checkbox_bg_round"
+        android:buttonTint="@drawable/checkbox_color_round"
+        android:id="@+id/item_check"/>
+
+    <ImageView
+        android:id="@+id/item_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/item_check"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/item_name"
+        android:layout_toEndOf="@id/item_iv"
+        android:layout_marginStart="15dp"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@id/item_name"
+        android:textSize="26sp" />
+
+
+
+</RelativeLayout>
