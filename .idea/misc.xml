@@ -27,23 +27,33 @@
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_button.xml" value="0.26197916666666665" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_check_box.xml" value="0.26197916666666665" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_constraint.xml" value="0.28072916666666664" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_context_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_dialog.xml" value="0.26197916666666665" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_edit_text.xml" value="0.25" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_edit_text2.xml" value="0.1875" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_fragment.xml" value="0.25" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_options_menu.xml" value="0.1125" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_popup_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_radio_button.xml" value="0.26197916666666665" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_relative.xml" value="0.28125" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_second.xml" value="0.358695652173913" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_text_view.xml" value="0.26197916666666665" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_third.xml" value="0.1" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_toggle_switch.xml" value="0.2463768115942029" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_toolbar.xml" value="0.25" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/content_edit_text.xml" value="0.24166666666666667" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_discover.xml" value="0.36614583333333334" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_first.xml" value="0.24166666666666667" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_me.xml" value="0.36614583333333334" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_message.xml" value="0.28177083333333336" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_phone.xml" value="0.28177083333333336" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_second.xml" value="0.24166666666666667" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/layout_custom.xml" value="0.28125" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/menu/context_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/menu/options_menu.xml" value="0.1" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/menu/popupo_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/menu/toolbae_options_menu.xml" value="0.24375" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.247" />
       </map>
     </option>

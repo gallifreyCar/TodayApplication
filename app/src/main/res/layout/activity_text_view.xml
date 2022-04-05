@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textSize="30sp"
-        android:drawableLeft="@mipmap/edit"
+        android:drawableLeft="@mipmap/edit2"
         android:drawablePadding="10dp"
         android:text="有图片的文字"
         />

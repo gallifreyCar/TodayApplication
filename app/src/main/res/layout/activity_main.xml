@@ -210,5 +210,37 @@
             android:id="@+id/btn_fragment"
             android:textAllCaps="false"
             android:layout_marginTop="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_options"
+            android:textSize="30sp"
+            android:text="OptionsMenu"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_context_menu"
+            android:textSize="30sp"
+            android:text="ContextMenuActivity"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_popup_menu"
+            android:textSize="30sp"
+            android:text="PopupMenuActivity"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_toolbar"
+            android:textSize="30sp"
+            android:text="ToolbarActivity"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </ScrollView>

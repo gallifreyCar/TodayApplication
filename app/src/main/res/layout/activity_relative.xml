@@ -49,25 +49,25 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/middle"
         android:layout_toLeftOf="@id/middle"
-        android:background="@mipmap/edit" />
+        android:background="@mipmap/edit2" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/edit"
+        android:background="@mipmap/edit2"
         android:layout_above="@id/middle"
         android:layout_alignStart="@id/middle"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/edit"
+        android:background="@mipmap/edit2"
         android:layout_toEndOf="@id/middle"
         android:layout_alignBottom="@id/middle"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/edit"
+        android:background="@mipmap/edit2"
         android:layout_alignEnd="@id/middle"
         android:layout_below="@id/middle"
         />

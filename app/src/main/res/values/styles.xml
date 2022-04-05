@@ -15,4 +15,17 @@
         <item name="android:button">@null</item>
         <item name="android:textColor">@drawable/fl_rb_textcolor</item>
     </style>
+
+    <style name="ToolbarTextStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="ThemeOverlay.AppCompat.DayNight">
+        <item name="actionOverflowMenuStyle">@style/OverFlowMenuStyle</item>
+    </style>
+    <style name="OverFlowMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
 </resources>

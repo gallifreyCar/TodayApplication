@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/file"
+        android:title="File">
+    </item>
+    <item android:icon="@mipmap/edit"
+        android:title="Edit">
+        <menu>
+            <item android:id="@+id/context_menu_cut"
+                android:title="context_cut"
+                android:icon="@mipmap/cut"/>
+            <item android:id="@+id/context_menu_paste"
+                android:title="context_paste"
+                android:icon="@mipmap/paste"/>
+        </menu>
+    </item>
+</menu>

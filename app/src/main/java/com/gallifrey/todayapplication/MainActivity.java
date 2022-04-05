@@ -19,6 +19,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gallifrey.todayapplication.menu.ContextMenuActivity;
+import com.gallifrey.todayapplication.menu.OptionsMenuActivity;
+import com.gallifrey.todayapplication.menu.PopupMenuActivity;
+import com.gallifrey.todayapplication.toolbar.ToolbarActivity;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView mTv;
     private MyApplication myApplication;
     private Button mBtnEvent,mBtnTextView,mBtnButton,mBtnEditText,mBtnRadioButton,mBtnCheckBox,mBtnTbSw;
-    private Button mBtnDialog,mBtnFragment;
+    private Button mBtnDialog,mBtnFragment,mBtnOptions,mBtnContext,mBtnPopup,mBtnToolbar;
     private MyButton myButton;
     private  MyEditText myEditText;
     @SuppressLint("ClickableViewAccessibility")
@@ -160,6 +165,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnFragment=findViewById(R.id.btn_fragment);
         mBtnFragment.setOnClickListener(myClickListener);
 
+        mBtnOptions=findViewById(R.id.btn_options);
+        mBtnOptions.setOnClickListener(myClickListener);
+
+        mBtnContext=findViewById(R.id.btn_context_menu);
+        mBtnContext.setOnClickListener(myClickListener);
+
+        mBtnPopup =findViewById(R.id.btn_popup_menu);
+        mBtnPopup.setOnClickListener(myClickListener);
+
+        mBtnToolbar=findViewById(R.id.btn_toolbar);
+        mBtnToolbar.setOnClickListener(myClickListener);
         }
 
     class MyClickListener implements View.OnClickListener{
@@ -190,7 +206,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case R.id.btn_fragment:
                     intent=new Intent(MainActivity.this,FragmentActivity.class);
-                            break;
+                    break;
+                case R.id.btn_options:
+                    intent=new Intent(MainActivity.this, OptionsMenuActivity.class);
+                    break;
+                case R.id.btn_context_menu:
+                    intent=new Intent(MainActivity.this, ContextMenuActivity.class);
+                    break;
+                case R.id.btn_popup_menu:
+                    intent=new Intent(MainActivity.this, PopupMenuActivity.class);
+                    break;
+                case R.id.btn_toolbar:
+                    intent=new Intent(MainActivity.this, ToolbarActivity.class);
+                    break;
                 default:
                     throw new IllegalArgumentException("null pointer");
             }

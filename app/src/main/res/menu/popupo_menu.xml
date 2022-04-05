@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/popup_file"
+        android:icon="@mipmap/file"
+        android:title="File"/>
+    <item android:title="Edit"
+        android:icon="@mipmap/edit">
+        <menu>
+            <item android:id="@+id/popup_search"
+                android:title="Search"
+                android:icon="@mipmap/search"/>
+            <item android:id="@+id/popup_save"
+                android:title="Save"
+                android:icon="@mipmap/save"/>
+
+        </menu>
+    </item>
+</menu>
