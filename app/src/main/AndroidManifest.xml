@@ -19,9 +19,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TodayApplication">
         <activity
-            android:theme="@style/Theme.TodayApplication.NoActionBar"
-            android:name=".toolbar.ToolbarActivity"
+            android:name=".listview.ListViewActivity"
             android:exported="false" />
+        <activity
+            android:name=".toolbar.ToolbarActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TodayApplication.NoActionBar" />
         <activity
             android:name=".menu.PopupMenuActivity"
             android:exported="false" />

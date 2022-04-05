@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="car">
+        <item>别克</item>
+        <item>宝马</item>
+        <item>奥迪</item>
+        <item>奔驰</item>
+        <item>保时捷</item>
+        <item>凯迪拉克</item>
+        <item>劳斯莱斯</item>
+        <item>法拉利</item>
+        <item>宾利</item>
+    </string-array>
+</resources>

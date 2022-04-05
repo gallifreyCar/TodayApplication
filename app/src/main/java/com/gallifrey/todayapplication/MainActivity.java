@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gallifrey.todayapplication.listview.ListViewActivity;
 import com.gallifrey.todayapplication.menu.ContextMenuActivity;
 import com.gallifrey.todayapplication.menu.OptionsMenuActivity;
 import com.gallifrey.todayapplication.menu.PopupMenuActivity;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private MyApplication myApplication;
     private Button mBtnEvent,mBtnTextView,mBtnButton,mBtnEditText,mBtnRadioButton,mBtnCheckBox,mBtnTbSw;
     private Button mBtnDialog,mBtnFragment,mBtnOptions,mBtnContext,mBtnPopup,mBtnToolbar;
+    private Button mBtnListview;
     private MyButton myButton;
     private  MyEditText myEditText;
     @SuppressLint("ClickableViewAccessibility")
@@ -176,6 +178,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mBtnToolbar=findViewById(R.id.btn_toolbar);
         mBtnToolbar.setOnClickListener(myClickListener);
+
+        mBtnListview=findViewById(R.id.btn_listview);
+        mBtnListview.setOnClickListener(myClickListener);
         }
 
     class MyClickListener implements View.OnClickListener{
@@ -218,6 +223,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case R.id.btn_toolbar:
                     intent=new Intent(MainActivity.this, ToolbarActivity.class);
+                    break;
+                case R.id.btn_listview:
+                    intent=new Intent(MainActivity.this, ListViewActivity.class);
                     break;
                 default:
                     throw new IllegalArgumentException("null pointer");

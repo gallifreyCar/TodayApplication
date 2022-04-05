@@ -242,5 +242,13 @@
             android:textSize="30sp"
             android:text="ToolbarActivity"
             android:textAllCaps="false"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_listview"
+            android:textSize="30sp"
+            android:text="ListViewActivity"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </ScrollView>
