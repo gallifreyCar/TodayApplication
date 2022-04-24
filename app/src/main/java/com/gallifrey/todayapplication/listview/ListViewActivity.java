@@ -12,12 +12,17 @@ import android.widget.Toast;
 
 import com.gallifrey.todayapplication.R;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class ListViewActivity extends AppCompatActivity {
     private ListView mlv;
     private List<Flower> flowerList;
+    private List<PersonChat> personChatList;
+    private static final int TYPE_LEFT=0;
+    private static final int TYPE_RIGHT=1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,17 +53,37 @@ public class ListViewActivity extends AppCompatActivity {
 //            }
 //        });
 
-        initFlower();
-        FlowerAdapter flowerAdapter=new FlowerAdapter((LinkedList<Flower>) flowerList,this);
-        mlv.setAdapter(flowerAdapter);
-        mlv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                flowerAdapter.remove(i);
-                Toast.makeText(ListViewActivity.this,i+" Clicked",Toast.LENGTH_LONG).show();
-            }
-        });
+//        initFlower();
+//        FlowerAdapter flowerAdapter=new FlowerAdapter((LinkedList<Flower>) flowerList,this);
+//        mlv.setAdapter(flowerAdapter);
+//        mlv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                flowerAdapter.remove(i);
+//                Toast.makeText(ListViewActivity.this,i+" Clicked",Toast.LENGTH_LONG).show();
+//            }
+//        });
+        intiPersonChat();
+        mlv.setAdapter(new MultiLayoutAdapter(personChatList,this));
+
     }
+
+    private void intiPersonChat(){
+        personChatList=new ArrayList<>();
+        for (int i=0;i<20;i++){
+            switch ((int)(Math.random()*2)){
+                case TYPE_LEFT:
+                    personChatList.add(new PersonChat(R.drawable.left_img,"LE"+i,false));
+                    break;
+                case TYPE_RIGHT:
+                    personChatList.add(new PersonChat(R.drawable.right_img,"RE"+i,true));
+                    break;
+
+            };
+        }
+    };
+
+
 
     private void initFlower() {
         flowerList=new LinkedList<>();

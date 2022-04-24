@@ -20,5 +20,6 @@ public class TextViewActivity extends AppCompatActivity {
 //        mTv.getPaint().setUnderlineText(true);
 //        mTv.getPaint().setAntiAlias(true);
         mTv.setText(Html.fromHtml("<u><b><s>www.baidu.com</s>"));
+
     }
 }

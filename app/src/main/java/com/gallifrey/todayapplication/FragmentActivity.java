@@ -51,7 +51,7 @@ public class FragmentActivity extends AppCompatActivity implements PhoneFragment
                         break;
                     case R.id.fl_rb_phone:
                         if(phoneFragment==null){
-                            phoneFragment=PhoneFragment.newInstance("phone 12315");
+                            phoneFragment=PhoneFragment.newInstance("phone  12315");
                             fragmentList.add(phoneFragment);
                             hideOtherFragment(phoneFragment,true);
                         }else {

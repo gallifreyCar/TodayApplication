@@ -18,6 +18,8 @@
         <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/fl_rb_message_bg.xml" value="0.1415" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/fl_rb_textcolor.xml" value="0.1415" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/hollow.xml" value="0.247" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.224" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/listitem_left.xml" value="0.1955" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/listseletor.xml" value="0.1595" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/pressresult.xml" value="0.247" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/drawable/rb_bg.xml" value="0.247" />
@@ -54,6 +56,9 @@
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_second.xml" value="0.24166666666666667" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/layout_custom.xml" value="0.28125" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/listitem.xml" value="0.1" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/listitem_left.xml" value="0.22" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/listitem_right.xml" value="0.25" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/test.xml" value="0.36614583333333334" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/viewfoot.xml" value="0.2520833333333333" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/viewhead.xml" value="0.2520833333333333" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/menu/context_menu.xml" value="0.36614583333333334" />
