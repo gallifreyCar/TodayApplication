@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TodayApplication">
         <activity
+            android:name=".gridview.GridViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".listview.ListViewActivity"
             android:exported="false" />
         <activity

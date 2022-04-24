@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gallifrey.todayapplication.gridview.GridViewActivity;
 import com.gallifrey.todayapplication.listview.ListViewActivity;
 import com.gallifrey.todayapplication.menu.ContextMenuActivity;
 import com.gallifrey.todayapplication.menu.OptionsMenuActivity;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private MyApplication myApplication;
     private Button mBtnEvent,mBtnTextView,mBtnButton,mBtnEditText,mBtnRadioButton,mBtnCheckBox,mBtnTbSw;
     private Button mBtnDialog,mBtnFragment,mBtnOptions,mBtnContext,mBtnPopup,mBtnToolbar;
-    private Button mBtnListview;
+    private Button mBtnListview,mBtnGridView;
     private MyButton myButton;
     private  MyEditText myEditText;
     @SuppressLint("ClickableViewAccessibility")
@@ -181,6 +182,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mBtnListview=findViewById(R.id.btn_listview);
         mBtnListview.setOnClickListener(myClickListener);
+
+        mBtnGridView=findViewById(R.id.btn_girdview);
+        mBtnGridView.setOnClickListener(myClickListener);
+
         }
 
     class MyClickListener implements View.OnClickListener{
@@ -226,6 +231,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case R.id.btn_listview:
                     intent=new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+                case R.id.btn_girdview:
+                    intent=new Intent(MainActivity.this, GridViewActivity.class);
                     break;
                 default:
                     throw new IllegalArgumentException("null pointer");

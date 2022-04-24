@@ -36,6 +36,7 @@
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_edit_text.xml" value="0.25" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_edit_text2.xml" value="0.1875" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_fragment.xml" value="0.25" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_grid_view.xml" value="0.1984375" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_list_view.xml" value="0.33" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/activity_options_menu.xml" value="0.1125" />
@@ -54,6 +55,7 @@
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_message.xml" value="0.28177083333333336" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_phone.xml" value="0.28177083333333336" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/fragment_second.xml" value="0.24166666666666667" />
+        <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/griditem.xml" value="0.14" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/layout_custom.xml" value="0.28125" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/listitem.xml" value="0.1" />
         <entry key="..\:/Android/TodayApplication/app/src/main/res/layout/listitem_left.xml" value="0.22" />
