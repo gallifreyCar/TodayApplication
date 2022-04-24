@@ -8,13 +8,14 @@ import android.widget.GridView;
 import com.gallifrey.todayapplication.R;
 import com.gallifrey.todayapplication.listview.Flower;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class GridViewActivity extends AppCompatActivity {
     private GridView mGv;
     private List<Flower> flowerList;
-
+    private List<String> imgNetList;
     public GridViewActivity() {
     }
 
@@ -24,8 +25,25 @@ public class GridViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_grid_view);
 
         mGv=findViewById(R.id.gv);
-        initFlower();
-        mGv.setAdapter(new GridFlowerAdapter(flowerList,this));
+//        initFlower();
+//        mGv.setAdapter(new GridFlowerAdapter(flowerList,this));
+        initImageNet();
+        mGv.setAdapter(new GridFlowerAdapter(imgNetList,this));
+    }
+
+    //网络资源的加载
+    private void initImageNet() {
+        imgNetList=new ArrayList<>();
+        imgNetList.add("https://gallifrey.asia/img/kyueki01.webp");
+        imgNetList.add("https://gallifrey.asia/img/kyueki02.webp");
+        imgNetList.add("https://gallifrey.asia/img/kyueki03.webp");
+        imgNetList.add("https://gallifrey.asia/img/kyueki04.webp");
+        imgNetList.add("https://gallifrey.asia/img/kyueki05.webp");
+        imgNetList.add("https://gallifrey.asia/img/kyueki06.webp");
+        imgNetList.add("https://gallifrey.asia/img/kyueki07.webp");
+        imgNetList.add("https://gallifrey.asia/img/kyueki08.webp");
+        imgNetList.add("https://gallifrey.asia/img/kyueki09.webp");
+
     }
 
 

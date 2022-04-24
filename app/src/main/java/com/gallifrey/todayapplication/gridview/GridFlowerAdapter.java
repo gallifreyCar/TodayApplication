@@ -8,16 +8,18 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.gallifrey.todayapplication.R;
 import com.gallifrey.todayapplication.listview.Flower;
 
 import java.util.List;
 
 public class GridFlowerAdapter extends BaseAdapter {
-    private List<Flower> mData;
+    private List<String> mData;
     private Context mContext;
 
-    public GridFlowerAdapter(List<Flower> data,Context context){
+    public GridFlowerAdapter(List<String> data,Context context){
         mData=data;
         mContext=context;
     }
@@ -48,8 +50,16 @@ public class GridFlowerAdapter extends BaseAdapter {
         }else{
             viewHolder= (ViewHolder) view.getTag();
         }
-        viewHolder.imageView.setImageResource(mData.get(i).getImageId());
-        viewHolder.textView.setText(mData.get(i).getName());
+//        viewHolder.imageView.setImageResource(mData.get(i).getImageId());
+//        viewHolder.textView.setText(mData.get(i).getName());
+
+        Glide.with(mContext)
+                .load(mData.get(i))
+                .centerCrop()
+                .placeholder(R.mipmap.ic_launcher)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .into(viewHolder.imageView);
+        viewHolder.textView.setText("图片"+i);
         return view;
     }
 
