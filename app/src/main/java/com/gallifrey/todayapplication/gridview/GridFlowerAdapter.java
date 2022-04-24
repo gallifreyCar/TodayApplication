@@ -47,9 +47,9 @@ public class GridFlowerAdapter extends BaseAdapter {
             view.setTag(viewHolder);
         }else{
             viewHolder= (ViewHolder) view.getTag();
-            viewHolder.imageView.setImageResource(mData.get(i).getImageId());
-            viewHolder.textView.setText(mData.get(i).getName());
         }
+        viewHolder.imageView.setImageResource(mData.get(i).getImageId());
+        viewHolder.textView.setText(mData.get(i).getName());
         return view;
     }
 
