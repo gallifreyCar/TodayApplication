@@ -28,4 +28,19 @@
         <item name="overlapAnchor">false</item>
     </style>
 
+    <style name="TabStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TabSelectedStyle">
+        <item name="android:textColor">#05d236</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TabUnSelectedStyle">
+        <item name="android:textColor">#a5a5a5</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
 </resources>

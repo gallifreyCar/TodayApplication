@@ -19,6 +19,7 @@ import com.gallifrey.todayapplication.menu.ContextMenuActivity;
 import com.gallifrey.todayapplication.menu.OptionsMenuActivity;
 import com.gallifrey.todayapplication.menu.PopupMenuActivity;
 import com.gallifrey.todayapplication.recyclerview.RecyclerViewActivity;
+import com.gallifrey.todayapplication.tablayout.TabLayoutActivity;
 import com.gallifrey.todayapplication.toolbar.ToolbarActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private MyApplication myApplication;
     private Button mBtnEvent,mBtnTextView,mBtnButton,mBtnEditText,mBtnRadioButton,mBtnCheckBox,mBtnTbSw;
     private Button mBtnDialog,mBtnFragment,mBtnOptions,mBtnContext,mBtnPopup,mBtnToolbar;
-    private Button mBtnListview,mBtnGridView,mBtnRecycleView;
+    private Button mBtnListview,mBtnGridView,mBtnRecycleView,mBtnTabLayout;
     private MyButton myButton;
     private  MyEditText myEditText;
     @SuppressLint("ClickableViewAccessibility")
@@ -180,6 +181,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnRecycleView=findViewById(R.id.btn_recycleview);
         mBtnRecycleView.setOnClickListener(myClickListener);
 
+        mBtnTabLayout=findViewById(R.id.btn_tablayout);
+        mBtnTabLayout.setOnClickListener(myClickListener);
+
         }
 
     class MyClickListener implements View.OnClickListener{
@@ -231,6 +235,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case R.id.btn_recycleview:
                     intent=new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    break;
+                case R.id.btn_tablayout:
+                    intent=new Intent(MainActivity.this, TabLayoutActivity.class);
                     break;
                 default:
                     throw new IllegalArgumentException("null pointer");

@@ -19,6 +19,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TodayApplication">
         <activity
+            android:name=".webview.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tablayout.TabLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".recyclerview.RecyclerViewActivity"
             android:exported="false" />
         <activity

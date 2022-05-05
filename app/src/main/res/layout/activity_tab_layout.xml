@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tablayout.TabLayoutActivity">
+    <com.google.android.material.tabs.TabLayout
+        app:tabIndicatorColor="#05d236"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicatorFullWidth="false"
+        app:tabTextColor="#6F392727"
+        app:tabSelectedTextColor="#05d236"
+        app:tabTextAppearance="@style/TabStyle"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<!--   静态添加     -->
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="tab1"/>-->
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="tab2"/>-->
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="tab3"/>-->
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+<!--    viewPage已经停止维护，请使用viewPage2-->
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/view_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintVertical_weight="1"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tab_layout"-->
+<!--        />-->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

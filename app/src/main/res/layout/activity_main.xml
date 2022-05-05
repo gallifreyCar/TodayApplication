@@ -268,5 +268,13 @@
             android:textSize="30sp"
             android:text="RecycleActivity"
             android:textAllCaps="false"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_tablayout"
+            android:textSize="30sp"
+            android:text="TabLayoutActivity"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </ScrollView>
