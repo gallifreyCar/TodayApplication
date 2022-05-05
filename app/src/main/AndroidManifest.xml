@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gallifrey.todayapplication">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <permission
         android:name="own"
         android:description="@string/title"
@@ -16,6 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TodayApplication">
+        <activity
+            android:name=".recyclerview.RecyclerViewActivity"
+            android:exported="false" />
         <activity
             android:name=".gridview.GridViewActivity"
             android:exported="false" />

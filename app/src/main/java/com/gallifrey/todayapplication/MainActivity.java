@@ -4,18 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,11 +18,8 @@ import com.gallifrey.todayapplication.listview.ListViewActivity;
 import com.gallifrey.todayapplication.menu.ContextMenuActivity;
 import com.gallifrey.todayapplication.menu.OptionsMenuActivity;
 import com.gallifrey.todayapplication.menu.PopupMenuActivity;
+import com.gallifrey.todayapplication.recyclerview.RecyclerViewActivity;
 import com.gallifrey.todayapplication.toolbar.ToolbarActivity;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private static final String TAG="MainActivityLife";
@@ -36,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private MyApplication myApplication;
     private Button mBtnEvent,mBtnTextView,mBtnButton,mBtnEditText,mBtnRadioButton,mBtnCheckBox,mBtnTbSw;
     private Button mBtnDialog,mBtnFragment,mBtnOptions,mBtnContext,mBtnPopup,mBtnToolbar;
-    private Button mBtnListview,mBtnGridView;
+    private Button mBtnListview,mBtnGridView,mBtnRecycleView;
     private MyButton myButton;
     private  MyEditText myEditText;
     @SuppressLint("ClickableViewAccessibility")
@@ -186,6 +177,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnGridView=findViewById(R.id.btn_girdview);
         mBtnGridView.setOnClickListener(myClickListener);
 
+        mBtnRecycleView=findViewById(R.id.btn_recycleview);
+        mBtnRecycleView.setOnClickListener(myClickListener);
+
         }
 
     class MyClickListener implements View.OnClickListener{
@@ -234,6 +228,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case R.id.btn_girdview:
                     intent=new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                case R.id.btn_recycleview:
+                    intent=new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
                 default:
                     throw new IllegalArgumentException("null pointer");
