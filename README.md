@@ -34,3 +34,5 @@
   - Fragment
   - Menu和Toolbar
   - AdapterView和Adapter
+## 许可证
+本应用程序遵循MIT许可证。
